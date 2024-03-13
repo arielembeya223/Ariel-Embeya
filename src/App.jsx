@@ -1,13 +1,14 @@
 import { useState } from 'react'
 
 import './App.css'
+import Particulesbg from './components/Particulesbg'
 
 function App() {
  
 
   return (
     <>
-      <div>bonjour</div>
+      <Particulesbg/>
     </>
 
   )
