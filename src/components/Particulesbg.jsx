@@ -24,7 +24,7 @@ const Particulesbg = () => {
                     options={{
                         background: {
                             color: {
-                                value: "#000000"
+                                value: "#030303"
                             }
                         },
                         fpsLimit: 60,
@@ -56,7 +56,7 @@ const Particulesbg = () => {
                             },
                             links: {
                                 color: "#ffffff",
-                                distance: 150,
+                                distance: 100,
                                 enable: true,
                                 opacity: 0.5,
                                 width: 1
@@ -76,7 +76,7 @@ const Particulesbg = () => {
                                     enable: true,
                                     area: 800
                                 },
-                                value: 100
+                                value: 200
                             },
                             opacity: {
                                 value: 0.5
