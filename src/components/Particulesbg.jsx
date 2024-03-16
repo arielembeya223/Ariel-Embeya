@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles"; 
 
-const App = () => {
+const Particulesbg = () => {
     const [init, setInit] = useState(false);
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const App = () => {
     }, []);
 
     return (
-        <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+        <div style={{ position: "fixed", top: 0, left: 0, width: "100%", height: "100%", zIndex: -1 }}>
             {init && (
                 <Particles
                     id="tsparticles"
@@ -82,10 +82,10 @@ const App = () => {
                                 value: 0.5
                             },
                             shape: {
-                                type: "circle"
+                                type: "triangle"
                             },
                             size: {
-                                value: { min: 1, max: 5 }
+                                value: 2
                             }
                         },
                         detectRetina: true
@@ -96,4 +96,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default Particulesbg;
