@@ -51,7 +51,13 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.home-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -62,5 +68,24 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+.space {
+  width: 5rem;
+}
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    flex-direction: column; /* Afficher les éléments en colonne sur les écrans de largeur maximale de 768px */
+  }
+  .space {
+    width: 5rem;
   }
 }
